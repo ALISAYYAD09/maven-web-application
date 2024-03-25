@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('gitcheckout') {
             steps {
-                git 'https://github.com/ALISAYYAD09/maven-web-application.git'
+                git()
       }
         }
       stage('junit test') {
