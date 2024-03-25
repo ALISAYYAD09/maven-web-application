@@ -1,20 +1,19 @@
-#@Library("sharedlib") _
+
 pipeline {
     agent any
 
     stages {
         stage('gitcheckout') {
             steps {
-<<<<<<< HEAD
+
                                   
                     git 'https://github.com/ALISAYYAD09/maven-web-application.git'
                
-=======
-                  git{
+
+
                    
-                    url: "https://github.com/ALISAYYAD09/maven-web-application.git"
-                     }
->>>>>> refs/remotes/origin/master
+                   
+
 
 
                # git branch: 'master', url: 'https://github.com/ALISAYYAD09/maven-web-application.git'
