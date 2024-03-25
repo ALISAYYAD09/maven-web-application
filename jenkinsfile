@@ -1,14 +1,13 @@
-@Library("sharedlib") _
+#@Library("sharedlib") _
 pipeline {
     agent any
 
     stages {
         stage('gitcheckout') {
             steps {
-                  git{
-                   
-                    url: 'https://github.com/ALISAYYAD09/maven-web-application.git'
-                     }
+                                  
+                    git 'https://github.com/ALISAYYAD09/maven-web-application.git'
+               
 
 
                # git branch: 'master', url: 'https://github.com/ALISAYYAD09/maven-web-application.git'
@@ -17,7 +16,7 @@ pipeline {
       stage('junit test') {
             steps {
                 script{
-                       test()
+                      sh 'mvn test'
                    }
             }
         }
