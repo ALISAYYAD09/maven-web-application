@@ -1,11 +1,12 @@
+add library ("sharedlib")_
 pipeline {
     agent any
 
     stages {
         stage('gitcheckout') {
             steps {
-                git 'https://github.com/ALISAYYAD09/maven-web-application.git'
-            }
+                git()
+      }
         }
     }
 }
