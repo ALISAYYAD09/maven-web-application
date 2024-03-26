@@ -33,6 +33,13 @@ maven "Maven"
                    }
             }
         }
+          stage('sonarqube') {
+            steps {
+                script{
+                      sh 'mvn sonar:sonar'
+                   }
+            }
+        }
 
     }
 }
