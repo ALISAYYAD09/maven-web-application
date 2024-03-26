@@ -19,13 +19,14 @@ maven "Maven"
                    }
             }
         }
-stage('integration test') {
+       stage('integration test') {
             steps {
                 script{
                       sh 'mvn verify -DskipUnitTests'
                    }
             }
-        }stage('build') {
+        }
+        stage('build') {
             steps {
                 script{
                       sh 'mvn clean package'
