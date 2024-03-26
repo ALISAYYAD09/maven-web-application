@@ -39,7 +39,7 @@ maven "Maven"
                       withSonarQubeEnv(credentialsId: '7a0ce3c4-4aa0-434b-8beb-f260c3d93559') {
     // some block
                         
-                      sh 'mvn sonar:sonar'
+                      sh 'mvn clean package sonar:sonar'
                     }
                    }
             }
