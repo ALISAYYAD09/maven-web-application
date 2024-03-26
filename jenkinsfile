@@ -10,7 +10,7 @@ maven "Maven"
                  
                     git 'https://github.com/ALISAYYAD09/maven-web-application.git'
 
-               # git branch: 'master', url: 'https://github.com/ALISAYYAD09/maven-web-application.git'
+               #git branch: 'master', url: 'https://github.com/ALISAYYAD09/maven-web-application.git'
       }
         }
       stage('junit test') {
